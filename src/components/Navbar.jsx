@@ -21,7 +21,7 @@ const Navbar = () => {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
 
       {/* Desktop Navbar */}
       <div className="fixed top-0 left-0 w-full flex justify-between items-center 

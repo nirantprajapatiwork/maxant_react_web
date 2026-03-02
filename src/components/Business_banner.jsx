@@ -3,7 +3,7 @@ import cta_bg from "./images/cta-bg.jpg";
 
 const Business_banner = () => {
   return (
-    <div className="relative w-full h-screen sm:flex-col">
+    <div className="relative w-full h-[400px] sm:flex-col">
 
       {/* Background Image */}
       <img
@@ -13,7 +13,7 @@ const Business_banner = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 
+      <div className="absolute inset-0 bg-black/10 
                       flex flex-col md:flex-row 
                       items-center justify-center md:justify-between 
                       px-6 md:px-20 gap-6">
@@ -22,7 +22,8 @@ const Business_banner = () => {
         <h1 className="text-white font-bold 
                        text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
                        max-w-xl text-center md:text-left">
-          Business Solutions and Crypto Investments
+          Business{" "} 
+          <span className="text-[#43ba7f]">Solutions</span> and{" "} <span className="text-[#ff511a]">Crypto</span> Investments
         </h1>
 
         {/* Right Side Buttons */}

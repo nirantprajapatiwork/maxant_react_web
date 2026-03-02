@@ -51,16 +51,16 @@ const Cardsmenu = () => {
         {cards.map((item, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-2xl p-6 sm:p-8 lg:p-10 
+            className="bg-white shadow-lg rounded-2xl p-4 sm:p-6 lg:p-8 
                        flex flex-col sm:flex-row items-center sm:items-start 
-                       gap-6 hover:shadow-2xl hover:-translate-y-2 
-                       transition duration-300"
+                       gap-6 hover:shadow-2xl"
+
           >
             
             {/* Icon */}
             <div className="flex items-center justify-center 
-                            w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 
-                            shrink-0">
+                            w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 
+                            shrink-0 hover:translate-y-2 duration-200">
               <div className="text-4xl sm:text-5xl lg:text-6xl text-[#43ba7f]">
                 {item.icon}
               </div>
@@ -68,14 +68,13 @@ const Cardsmenu = () => {
 
             {/* Content */}
             <div className="text-center sm:text-left">
-              <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-2 sm:mb-3">
+              <h1 className="font-bold text-xs sm:text-xl lg:text-2xl mb-2 sm:mb-3">
                 {item.title}
               </h1>
               <p className="text-gray-600 text-base sm:text-lg">
                 {item.desc}
               </p>
             </div>
-
           </div>
         ))}
 
