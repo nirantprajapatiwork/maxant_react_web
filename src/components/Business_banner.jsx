@@ -21,7 +21,7 @@ const Business_banner = () => {
         {/* Left Side Text */}
         <h1 className="text-white font-bold 
                        text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                       max-w-xl text-center md:text-left">
+                       max-w-xl text-center md:text-left leading-16">
           Business{" "} 
           <span className="text-[#43ba7f]">Solutions</span> and{" "} <span className="text-[#ff511a]">Crypto</span> Investments
         </h1>

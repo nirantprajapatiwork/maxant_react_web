@@ -2,54 +2,107 @@ import React from "react";
 
 const About_us = () => {
   return (
-    <div className="w-full bg-gray-50">
-      {/*Heading */}
-      <section className="py-20 text-center">
-        <h2 className="font-bold text-[#ff511a] text-xl">ABOUT US</h2>
+    <div className="w-full bg-white">
 
-        <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-3">
+      <section className="py-20 text-center">
+        <h2 className="font-bold text-[#ff511a] text-lg tracking-wider">
+          ABOUT US
+        </h2>
+
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl mt-3 text-gray-800">
           Know Us Better
         </h1>
       </section>
 
       <section className="px-6 md:px-20 pb-20">
-        {/* Main Flex Container */}
-        <div className="flex flex-col lg:flex-row gap-10 items-start">
-          {/* Left Side Button*/}
-          <div className="flex flex-col sm:flex-row gap-6 flex-1 w-full">
-            <div className="bg-white shadow-lg px-8 py-5 text-center rounded-md hover:text-[#ff511a] transition">
-              <button className="text-lg font-semibold">Web Design</button>
+        <div className="flex flex-col lg:flex-row gap-16">
+
+          <div className="flex-1">
+
+            {/* Tabs */}
+            <div className="flex flex-wrap gap-8 mb-12">
+              <div className="bg-white text-xl shadow-md px-8 py-5 rounded-md text-[#ff511a] font-semibold cursor-pointer">
+                Web Design
+              </div>
+
+              <div className="bg-white text-xl shadow-md px-8 py-5 rounded-md font-semibold cursor-pointer hover:text-[#ff511a] transition">
+                Graphics
+              </div>
+
+              <div className="bg-white text-xl shadow-md px-8 py-5 rounded-md font-semibold cursor-pointer hover:text-[#ff511a] transition">
+                Web Coding
+              </div>
             </div>
 
-            <div className="bg-white shadow-lg px-8 py-5 text-center rounded-md hover:text-[#ff511a] transition">
-              <span className="text-lg font-semibold">Graphics</span>
+            {/* Table Header */}
+            <div className="grid grid-cols-4 pb-6 border-b border-gray-300 font-semibold text-gray-800">
+              <h3>Project Title</h3>
+              <h3>Budget</h3>
+              <h3>Deadline</h3>
+              <h3>Client</h3>
             </div>
 
-            <div className="bg-white shadow-lg px-8 py-5 text-center rounded-md hover:text-[#ff511a] transition">
-              <span className="text-lg font-semibold">Web Coding</span>
+            {/* Row 1 */}
+            <div className="grid grid-cols-4 py-6 border-b border-gray-300 text-gray-700">
+              <p className="text-[#43ba7f] font-semibold">Website Redesign</p>
+              <p>$1,500 to $2,200</p>
+              <p>2022 Dec 12</p>
+              <p>Web Biz</p>
             </div>
+
+            {/* Row 2 */}
+            <div className="grid grid-cols-4 py-6 border-b border-gray-300 text-gray-700">
+              <p className="text-[#43ba7f] font-semibold">Website Renovation</p>
+              <p>$2,500 to $3,600</p>
+              <p>2022 Dec 10</p>
+              <p>Online Ads</p>
+            </div>
+
+            {/* Row 3 */}
+            <div className="grid grid-cols-4 py-6 border-b border-gray-300 text-gray-700">
+              <p className="text-[#43ba7f] font-semibold">Marketing Plan</p>
+              <p>$2,500 to $4,200</p>
+              <p>2022 Dec 8</p>
+              <p>Web Biz</p>
+            </div>
+
+            {/* Row 4 */}
+            <div className="grid grid-cols-4 py-6 border-b border-gray-300 text-gray-700">
+              <p className="text-[#43ba7f] font-semibold">All-new Website</p>
+              <p>$3,000 to $6,600</p>
+              <p>2022 Dec 2</p>
+              <p>Web Presence</p>
+            </div>
+
           </div>
 
-          {/* Right Side Button*/}
-          <div className="flex-1 max-w-md mr-9 lg:pl-24">
-            <h1 className="font-bold text-xl sm:text-2xl leading-snug ">
+
+          <div className="flex-1 max-w-sm space-y-13 ">
+
+            <h2 className="text-2xl font-bold leading-snug  text-gray-800">
               Please tell us about your idea and how you want it to be
-            </h1>
-            <p className="font-light text-sm mt-6 text-black leading-7">
-              You are allowed to use this template for your websites. You are{" "}
-              <span className="font-bold">NOT</span> allowed to redistribute the
-              template ZIP file on any other template websites.
+            </h2>
+
+            <p className="text-gray-600 leading-7   ">
+              You are allowed to use this template for your websites.
+              You are <span className="font-bold">NOT allowed</span> to
+              redistribute the template ZIP file on any other template websites.
             </p>
-            <p className="font-light text-sm mt-6 text-black leading-7">
-              Thank you for downloading and using our templates. Please tell
-              your friends about our website.
+
+            <p className="text-gray-600 leading-7 ">
+              Thank you for downloading and using our templates.
+              Please tell your friends about our website.
             </p>
-            <button className="mt-6 bg-[#43ba7f] w-40 h-11 rounded-[5px] text-white">
+
+            <button className="bg-[#43ba7f] text-white px-8 py-3 rounded-md hover:opacity-90 transition">
               Discover More
             </button>
+
           </div>
+
         </div>
       </section>
+
     </div>
   );
 };
