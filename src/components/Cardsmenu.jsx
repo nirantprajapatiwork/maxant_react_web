@@ -46,7 +46,7 @@ const Cardsmenu = () => {
     <div className="bg-gray-100 min-h-screen px-4 sm:px-6 md:px-10 py-10">
       
       {/* Responsive Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 max-w-8xl mx-auto">
         
         {cards.map((item, index) => (
           <div
