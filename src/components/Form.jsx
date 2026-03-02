@@ -17,11 +17,11 @@ const Form = () => {
       <div className="relative z-10 container mx-auto px-6 md:px-20 py-20 flex flex-col lg:flex-row items-center gap-16">
 
         {/* LEFT IMAGE */}
-        <div className="flex-1 flex  lg:justify-start">
+        <div className=" hidden flex-1 lg:flex  lg:justify-start">
           <img
             src={calculator_image}
             alt="lady"
-            className="w-full h-full pt-32 sm:hidden"
+            className="w-full h-full pt-32 "
           />
         </div>
 
