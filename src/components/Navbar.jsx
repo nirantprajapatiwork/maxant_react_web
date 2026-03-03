@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 lg:gap-12 text-white text-base lg:text-lg">
-          <li className="hover:text-[#ff511a] cursor-pointer transition">Home</li>
+          <li className="hover:text-[#ff511a] cursor-pointer transition active: text-[#ff511a]">Home</li>
           <li className="hover:text-[#ff511a] cursor-pointer transition">Services</li>
           <li className="hover:text-[#ff511a] cursor-pointer transition">About</li>
           <li className="hover:text-[#ff511a] cursor-pointer transition">Pages</li>

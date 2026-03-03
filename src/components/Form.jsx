@@ -10,23 +10,23 @@ const Form = () => {
       <img
         src={calculator_bg}
         alt="bg"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-screen h-screen object-cover"
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 md:px-20 py-20 flex flex-col lg:flex-row items-center gap-16">
+      <div className="relative z-10 container mx-auto px-6 md:px-5 py-20 flex flex-col lg:flex-row items-center gap-16">
 
         {/* LEFT IMAGE */}
-        <div className=" hidden flex-1 lg:flex  lg:justify-start">
+        <div className=" hidden lg:flex lg:justify-start">
           <img
             src={calculator_image}
             alt="lady"
-            className="w-full h-full pt-32 "
+            className="max-w-full h-fix pt-12 "
           />
         </div>
 
         {/* RIGHT FORM */}
-        <div className="flex-1 w-full max-w-xl text-white">
+        <div className="flex-1 w-full max-w-2xl text-white">
 
           <p className="text-[#ff511a] font-semibold mb-2 tracking-wide">
             YOUR FREEDOM
@@ -72,9 +72,10 @@ const Form = () => {
                 className="w-full bg-[#798697b3] backdrop-blur-sm p-3 rounded-md text-white focus:outline-none"
               >
                 <option className="text-black">Choose an Option</option>
-                <option className="text-black">Investment</option>
-                <option className="text-black">Loan</option>
-                <option className="text-black">Saving</option>
+                <option className="text-black">Online Banking</option>
+                <option className="text-black">Financial Control</option>
+                <option className="text-black">Yearly Profit</option>
+                   <option className="text-black">Crypto Investment</option>
               </select>
             </div>
 

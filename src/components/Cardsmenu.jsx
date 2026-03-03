@@ -43,24 +43,22 @@ const Cardsmenu = () => {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen px-4 sm:px-6 md:px-10 py-10">
+    <div className="bg-gray-100 min-h-screen px-4 sm:px-6 md:px-10 py-10 ">
       
       {/* Responsive Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 max-w-8xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 max-w-7xl mx-auto mt-20">
         
         {cards.map((item, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-2xl p-4 sm:p-6 lg:p-8 
+            className="bg-white rounded-xl p-3 sm:p-4 lg:p-6 
                        flex flex-col sm:flex-row items-center sm:items-start 
-                       gap-6 hover:shadow-2xl"
-
+                       gap-6 shadow  "
           >
-            
             {/* Icon */}
-            <div className="flex items-center justify-center 
+            <div className="flex  justify-center
                             w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 
-                            shrink-0 hover:translate-y-2 duration-200">
+                            shrink-0 hover:translate-y-3 duration-500">
               <div className="text-4xl sm:text-5xl lg:text-6xl text-[#43ba7f]">
                 {item.icon}
               </div>
@@ -68,10 +66,10 @@ const Cardsmenu = () => {
 
             {/* Content */}
             <div className="text-center sm:text-left">
-              <h1 className="font-bold text-xs sm:text-xl lg:text-2xl mb-2 sm:mb-3">
+              <h1 className="font-semibold text-xs sm:text-xl lg:text-xl mb-2 sm:mb-3">
                 {item.title}
               </h1>
-              <p className="text-gray-600 text-base sm:text-lg">
+              <p className="text-gray-600 text-base sm:text-[15px]">
                 {item.desc}
               </p>
             </div>
